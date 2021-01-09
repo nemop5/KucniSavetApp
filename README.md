@@ -3,7 +3,7 @@ Aplikacija koja obaveštava stanare zgrade o događajima i daje predloge za rado
 
 Od tehnologija korišćeno:
 - BACKEND: Java MVC, Spring Boot, MySQL, Hibernate, REST API 
-- FRONTEND: React.js, AJAX, Bootsrap 
+- FRONTEND: React.js, AJAX, Bootstrap 
 
 TO START APP:
 - git clone https://github.com/nemop5/KucniSavetApp.git
