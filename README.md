@@ -2,7 +2,7 @@
 Aplikacija koja obaveštava stanare zgrade o događajima i daje predloge za radove sa mogućnošću glasanja.
 
 Od tehnologija korišćeno:
-- BACKEND: Java MVC, Spring Boot, MySQL, Hibernate, REST API 
+- BACKEND: Java, Maven, Spring MVC, MySQL, Hibernate, REST API 
 - FRONTEND: React.js, AJAX, Bootstrap 
 
 TO START APP:
