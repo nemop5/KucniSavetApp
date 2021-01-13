@@ -97,7 +97,7 @@ class EditObjekat extends React.Component{
                         <Form.Label>Tip</Form.Label>
                         <Form.Control onChange={event => {this.ValueInputChange(event); this.showTipPoruke(event)}} name="tip" value={this.state.objekat.tip} as="select">
                             <option value={""}></option>
-                            <option value={"obaveštenje"} key={"obaveštenje"}>{"obaveštenje"}</option>
+                            <option value={"obavestenje"} key={"obavestenje"}>{"obavestenje"}</option>
                             <option value={"predlog"} key={"predlog"}>{"predlog"}</option>
                         </Form.Control>
                     </Form.Group>

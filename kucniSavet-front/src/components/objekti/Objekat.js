@@ -41,15 +41,15 @@ class Objekat extends React.Component {
   async getPoruke(page = null) {
     let config = { params: {} };
 
-    if (this.state.search.naslov != "") {
+    if (this.state.search.naslov !== "") {
       config.params.naslov = this.state.search.naslov;
     }
 
-    if (this.state.search.tip != "") {
+    if (this.state.search.tip !== "") {
       config.params.tip = this.state.search.tip;
     }
 
-    if (this.state.search.zgradaId != -1) {
+    if (this.state.search.zgradaId !== -1) {
       config.params.zgradaId = this.state.search.zgradaId;
     }
 
@@ -112,9 +112,6 @@ class Objekat extends React.Component {
       await Axios.delete("/poruke/" + porukaId);
       this.getPoruke();
     } catch (error) {
-      if (error.response.status === 400) {
-        alert("Račun nije moguće obrisati. Stanje nije 0");
-      } else
         alert("Nije uspelo brisanje.");
     }
   }
@@ -179,7 +176,7 @@ class Objekat extends React.Component {
             <Form.Label>Tip</Form.Label>
             <Form.Control onChange={event => {this.addValueInputChange(event); this.showTipPoruke(event)}} name="tip" value={this.state.poruka.tip} as="select">
               <option value={""}></option>
-              <option value={"obaveštenje"} key={"obaveštenje"}>{"obaveštenje"}</option>
+              <option value={"obavestenje"} key={"obavestenje"}>{"obavestenje"}</option>
               <option value={"predlog"} key={"predlog"}>{"predlog"}</option>
             </Form.Control>
           </Form.Group>
@@ -237,7 +234,7 @@ class Objekat extends React.Component {
                   <Form.Label>Tip</Form.Label>
                   <Form.Control onChange={(event) => this.searchValueInputChange(event)} name="tip" value={this.state.search.tip} as="select">
                     <option value={""}></option>
-                    <option value={"obaveštenje"} key={"obaveštenje"}>{"obaveštenje"}</option>
+                    <option value={"obavestenje"} key={"obavestenje"}>{"obavestenje"}</option>
                     <option value={"predlog"} key={"predlog"}>{"predlog"}</option>
                   </Form.Control>
                 </Form.Group>
@@ -249,8 +246,8 @@ class Objekat extends React.Component {
 
         <div style={{marginTop: 25, float:"right"}}>
           <ButtonGroup>
-            <Button disabled={this.state.pageNum == 0} onClick={() => this.changePage(-1)}>Nazad</Button>
-            <Button disabled={this.state.pageNum + 1 == this.state.totalPages} onClick={() => this.changePage(1)}>Napred</Button>
+            <Button disabled={this.state.pageNum === 0} onClick={() => this.changePage(-1)}>Nazad</Button>
+            <Button disabled={this.state.pageNum + 1 === this.state.totalPages} onClick={() => this.changePage(1)}>Napred</Button>
           </ButtonGroup>
         </div>
     
