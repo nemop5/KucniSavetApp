@@ -128,16 +128,11 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>Application</finalName>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-<!--				<configuration>-->
-<!--					<mainClass>com.ftninformatika.jwd.modul3.cinema.WafepaApplication</mainClass>-->
-<!--					<excludeDevtools>false</excludeDevtools>-->
-<!--				</configuration>-->
-			</plugin>
-		</plugins>
+    	<plugins>
+        	<plugin>
+            	<groupId>org.springframework.boot</groupId>
+            	<artifactId>spring-boot-maven-plugin</artifactId>
+        	</plugin>
+    	</plugins>
 	</build>
 </project>
