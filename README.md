@@ -14,6 +14,21 @@ You will need the following tools:
 
 ## To start app:
 
+-Before you do steps below, make sure to check mysql password:
+Application properties:
+
+```
+Application properties: 
+
+spring.datasource.driverClassName=com.mysql.jdbc.Driver
+spring.datasource.url=jdbc:mysql://localhost:3306/kucniSavet?useUnicode=yes&characterEncoding=UTF-8&useSSL=false&allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true
+spring.datasource.username=root
+spring.datasource.password=root
+
+It is currently set up as default root/root
+```
+
+
 Follow these steps to get your app running on your local machine:
 1. git clone https://github.com/nemop5/KucniSavetApp.git
 2. use terminal to navigate to KucniSavetApp, run java -jar Application-0.0.1-SNAPSHOT.jar
