@@ -15,7 +15,6 @@ You will need the following tools:
 ## To start app:
 
 -Before you do steps below, make sure to check mysql password:
-Application properties:
 
 ```
 Application properties: 
