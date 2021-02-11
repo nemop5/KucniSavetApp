@@ -8,7 +8,7 @@ class Home extends React.Component {
     
     return (   
       <div>
-        <Jumbotron class="jumbotron text-center">
+        <Jumbotron className="jumbotron text-center">
           <h1 style={{textAlign:'center'}}>Welcome, {username}</h1>
         </Jumbotron>
       </div>
