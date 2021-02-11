@@ -35,11 +35,12 @@ It is currently set up as default root/root
 5. use miroslav as username and passoword to login
 
 -If your SQL server username and password is set as somethnig else (not as root/root), than you have to follow these steps:
-1. open up your local IDE - select KucniSavetApp as workspace
-2. import existing maven project - "kucniSavet-back" 
-3. Configure username and password in application.properties at location: KucniSavetApp/kucniSavet-back/src/main/resources
-4. right click on class KucniSavetApplication.java => Run as Java application
-5. open up a new window terminal and navigate to directory "kucniSavet-frontend", run: npm install , than run: npm start
-6. follow the link to see the app running in development mode: http://localhost:3000 
-7. use miroslav as username and password to login
+1. git clone https://github.com/nemop5/KucniSavetApp.git
+2. open up your local IDE - select KucniSavetApp as workspace
+3. import existing maven project - "kucniSavet-back" 
+4. Configure username and password in application.properties at location: KucniSavetApp/kucniSavet-back/src/main/resources
+5. right click on class KucniSavetApplication.java => Run as Java application
+6. open up a new window terminal and navigate to directory "kucniSavet-front", run: npm install , than run: npm start
+7. follow the link to see the app running in development mode: http://localhost:3000 
+8. use miroslav as username and password to login
 
