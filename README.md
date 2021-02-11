@@ -17,7 +17,7 @@ You will need the following tools:
 -Before you do steps below, make sure to check mysql Server password:
 
 ```
-Application properties: 
+application.properties: 
 
 spring.datasource.driverClassName=com.mysql.jdbc.Driver
 spring.datasource.url=jdbc:mysql://localhost:3306/kucniSavet?useUnicode=yes&characterEncoding=UTF-8&useSSL=false&allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true
@@ -37,8 +37,9 @@ It is currently set up as default root/root
 -If your SQL server username and password is set as somethnig else (not as root/root), than you have to follow these steps:
 1. open up your local IDE - select KucniSavetApp as workspace
 2. import existing maven project - "kucniSavet-back" 
-3. right click on class KucniSavetApplication.java => Run as Java application
-4. open up a new window terminal and navigate to directory "kucniSavet-frontend", run: npm install , than run: npm start
-5. follow the link to see the app running in development mode: http://localhost:3000 
-6. use miroslav as username and password to login
+3. Configure username and password in application.properties at location: KucniSavetApp/kucniSavet-back/src/main/resources
+4. right click on class KucniSavetApplication.java => Run as Java application
+5. open up a new window terminal and navigate to directory "kucniSavet-frontend", run: npm install , than run: npm start
+6. follow the link to see the app running in development mode: http://localhost:3000 
+7. use miroslav as username and password to login
 
