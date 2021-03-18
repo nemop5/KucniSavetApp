@@ -20,9 +20,9 @@ npm run build
 npm run test:unit
 ```
 
-### Run your end-to-end tests
+### Lints and fixes files
 ```
-npm run test:e2e
+npm run lint
 ```
 
 ### Customize configuration
