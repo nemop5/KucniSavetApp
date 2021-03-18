@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Footer.vue renders span 2019 Vega IT Sourcing 1`] = `
-<footer class="footer">
-  <div class="wrap"><span class="copy">© 2019 Vega IT Sourcing</span></div>
-</footer>
-`;
